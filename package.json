@@ -17,7 +17,7 @@
     "url": "https://github.com/samjulien/jenkins-demo/issues"
   },
   "homepage": "https://github.com/samjulien/jenkins-demo#readme",
-  "devDependencies": {
+  "dependencies": {
     "mocha": "^6.1.4",
     "mocha-jenkins-reporter": "^0.4.1"
   }
