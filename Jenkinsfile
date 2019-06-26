@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Install dependencies') {
       steps {
-        sh 'npm install -d'
+        sh 'npm install'
       }
     }
     stage('Run test cases') {
@@ -27,7 +27,9 @@ npx mocha --reporter mocha-jenkins-reporter'''
   }
   post {
     always {
-        junit 'test-results.xml'
+      junit 'test-results.xml'
+
     }
+
   }
 }
